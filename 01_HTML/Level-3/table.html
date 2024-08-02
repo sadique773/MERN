@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1><u>Basic Table Creation</u></h1>
+    <table border="black">
+        <caption>Food Menu </caption>
+        <tr>
+            <th>ITEM</th>
+            <th>PRICE</th>
+        </tr>
+        <tr>
+            <td>frooti</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Samosa</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Chips</td>
+            <td>20</td>
+        </tr>
+    </table>
+
+
+    <h2><u>Semantic in Table</u></h2>
+    <table border="black">
+        <caption>Food Menu </caption>
+       <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>PRICE</th>
+            </tr>
+       </thead>
+
+       <tbody>
+            <tr>
+                <td>frooti</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>Samosa</td>
+                <td>20</td>
+            </tr>
+
+            <tr>
+                <td>Chips</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>50</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <h2><u>Colspan and Rowspan in Table</u></h2>
+    <table border="black">
+        <caption>Food Menu </caption>
+        <tr>
+            <th rowspan="2">ITEM</th>
+            <th colspan="2">PRICE</th>
+        </tr>
+        <tr>
+            <td>inr</td>
+            <td>Usd</td>
+        </tr>
+        <tr>
+            <td>frooti</td>
+            <td>10</td>
+            <td>0.14</td>
+        </tr>
+        <tr>
+            <td>Samosa</td>
+            <td>20</td>
+            <td>0.17</td>
+        </tr>
+        <tr>
+            <td>Chips</td>
+            <td>20</td>
+            <td>0.28</td>
+        </tr>
+    </table>
+
+    <h2><u>Task</u></h2>
+    <table border="black">
+        <caption>A test table with merged cells</caption>
+        <thead>
+           <tr>
+            <td rowspan="2"></td>
+            <td colspan="2">Average</td>
+            <td rowspan="2">Red Eyes</td>
+           </tr>
+           <tr>
+            <td>Height</td>
+            <td>Weight </td>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Males</td>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Females</td>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+        </tbody>
+    </table>
+
+ 
+</body>
+</html>
