@@ -1,0 +1,39 @@
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: azure;
+    background-color: gray;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: 100px 100px 100px ;
+
+}
+.item{
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+    
+    
+}
+
+.animation{
+    height: 300px;
+    width: 500px;
+    background-color:lightgreen;
+    animation-name: fontanimation;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-direction: alternate  ; 
+}
+
+
+@keyframes fontanimation {
+    from{
+        font-size: 20px;
+    }
+    to{
+        font-size: 40px;
+    }
+}
