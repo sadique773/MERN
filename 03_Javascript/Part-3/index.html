@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <li><h2><u>Array method in Javascript</u></h2></li>
+        <ul>
+            <li>Map Function</li>
+            <pre>
+                let num = [1,2,3,4,5,6,7]
+                let double = num.map((ele)=>{
+                    return ele*2
+                })
+            </pre>
+            <li>Filter function</li>
+            <pre>
+                let num = [1,2,3,4,5,6,7]
+                let double = num.filter((ele)=>{
+                    return ele%2==0
+                })
+            </pre>
+
+            <li>Every Method</li>
+            <pre>
+                let num = [1,2,3,4,5,6,7]
+                let double = num.every((ele)=>{
+                    return ele%2==0
+                })
+            </pre>
+
+            <li>Spread Operator</li>
+            <pre>
+                let num = [1,2,3,4,5,6,7]
+                console.log( Math.min(...num))
+            </pre>
+
+            <li>Rest Operator</li>
+            <pre>
+                function restOperator(...nums){
+                    for number in nums{
+                        console.log(number)
+                    }
+                }
+            </pre>
+
+        </ul>
+          
+        <li><h2><u>This keyword in Javascript</u></h2></li>
+        <pre>
+            const student = {
+                name: "Sadique",
+                age: 23,
+                eng: 54,
+                math:70,
+                phy:70,
+            
+                getAvg(){
+                    console.log((this.eng+this.math+this.phy)/3)
+                }
+            }
+            
+            student.getAvg()
+        </pre>
+
+        <li><h2><u>Try and catch</u></h2></li>
+        <pre>
+            try{
+                console.log(A)
+            }catch(err)
+            {
+                console.log("got errorr ... A is not declare ")
+                console.log(err)
+            }
+        </pre>
+
+
+
+        <li><h2><u>Arrow Function</u></h2></li>
+       
+        <pre>
+            const sum = (a,b) =>{
+                console.log(a+b)
+            }
+
+            <p>Return value in one line </p>
+            const sum = (a,b) =>(a+b)
+        </pre>
+
+
+        <li><h2><u>Set Timeout Function</u></h2></li>
+        <pre>
+            setTimeout(Function,Timeout)
+            setTimeout( () => {
+                console.log("I am parallely run bro")
+            },4000);
+
+        </pre>
+        
+        <li><h2><u>Set Interval Function</u></h2></li>
+
+        <pre>
+            let id= setInterval(()=>{
+                console.log("Set Interval bro")
+            },100)
+
+            clearInterval(id); for stoping of interval function 
+        </pre>
+    </ul>
+    
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
