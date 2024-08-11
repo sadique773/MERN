@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+            text-align: center;
+            height: 90px;
+            width: 70%;
+            position: absolute;
+            margin-left: 15%;
+        }
+
+        h1{
+            text-align: center;
+        }
+        button{
+            margin-left: 45%;
+            margin-bottom: 20px;
+            
+        }
+
+        
+    </style>
+    
+</head>
+<body>
+    
+    <h1>Color Generator</h1>
+    
+    <button class="btn">Generate color</button>
+    
+    <div class="color">
+        This is Your new color
+    </div>
+
+
+    <script>
+        let btn = document.querySelector(".btn")
+        btn.addEventListener("click",()=>{
+            let red = Math.floor(Math.random()*255)
+            let green = Math.floor(Math.random()*255)
+            let blue = Math.floor(Math.random()*255)
+            console.log(red,green,blue)
+
+            let heading = document.querySelector("h1");
+            heading.innerText = `rgb(${red},${green},${blue})`
+
+            let color = document.querySelector(".color")
+            color.style.backgroundColor = `rgb(${red},${green},${blue})`
+
+            
+
+        })
+    </script>
+</body>
+</html>
