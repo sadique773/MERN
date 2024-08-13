@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul>
+        <li><h2>Understanding of Call Stack</h2></li>
+        <li><h2>Breakpoint</h2></li>
+        <li><h2> Synchronous and Asynchronous and Single threaded nature</h2></li>
+        <li><h2>Callback hell </h2></li>  
+        <li><h2>Promises</h2></li>  
+        <li><h2>Promise Channing </h2></li>   
+        <li><h2>Asynch and await</h2></li>   
+        <li><h2>Api</h2></li> 
+        <li><h2>Json</h2></li> 
+        <ul>
+            <li>JSON.parse(data)</li>
+            <li>JSON.stringify(JSON)</li>
+        </ul>
+        <li><h2>Testing API requests</h2></li> 
+        <ul>
+            <li>Hoopscoth</li>
+            <li>Postman</li>
+        </ul>
+        <li><h2>Ajax</h2></li> 
+        <pre>
+        Asynchronous Javascript XML
+        (For Channing no reload requirement)
+        </pre>
+        <li><h2>Https Verbs</h2></li> 
+        <ul>
+            <li>GET</li>
+            <li>POST</li>
+            <li>DELETE</li>
+        </ul>
+        <li><h2>Status code</h2></li> 
+        <ul>
+            <li>200 - ok</li>
+            <li>404 - Not Found</li>
+            <li>400 - Bad Request</li>
+            <li>500 - Internal server Error</li>
+        </ul>
+        <li><h2>Https Verbs</h2></li> 
+        <pre>
+
+        </pre>
+
+
+       
+    </ul>
+
+
+
+
+    <script>
+        let url ="https://catfact.ninja/fact";
+        fetch(url)
+        .then((response)=>{
+            return response.json()
+        })
+        .then((data)=>{
+            console.log(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+    </script>
+</body>
+</html>
