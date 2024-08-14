@@ -6,6 +6,37 @@
     <title>Axios</title>
 </head>
 <body>
+
+    <h1>Get facts about Cat</h1>
+
+    <h3 id="facts">Click on fact button</h3>
+    <button> Generate Facts</button>
+
     
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <script>        
+    let url ="https://catfact.ninja/fact1"
+    let fact = document.querySelector("h3")
+    let btn =  document.querySelector("button")
+    btn.addEventListener("click",()=>{
+        getFacts();
+    })
+    
+
+    
+    async function getFacts() {
+        try{
+            let res = await axios.get(url)
+            fact.innerText =`${res.data.fact}`
+            
+        } catch(err){
+            fact.innerText =`${err}`
+            console.log(`Error on server ${err}`)
+        }
+ 
+    }
+    </script>
 </body>
 </html>
