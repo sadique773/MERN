@@ -1,14 +1,14 @@
 import React from 'react'
 import Price from './price';
 import Title from './Title';
+import "./Product"
 
-function Card({details}) {
-    
+function Card({productName,description,oldPrice,newPrice}) {     
   return (
     <div className='Product'>
-        <p>{details.Title}</p>
-        <p>{details.p1}</p>
-        <Price oldPrice={details.oldPrice} newPrice={details.oldPrice}/>
+        <h3>{productName}</h3>
+        <p>{description}</p>
+        <Price oldPrice={oldPrice} newPrice={newPrice}/>
     </div>
   )
 }

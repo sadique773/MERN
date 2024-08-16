@@ -1,12 +1,30 @@
 .Product{
-    border: 2px solid red;
-    border-radius: 40px;
-    width: 150px;
+    background-image: linear-gradient(rgb(224, 139, 12), rgb(230, 230, 223), rgb(22, 189, 22));
+    border: 2px solid rgba(22, 224, 72, 0.634);
+    border-radius: 20px;
+    width: 250px;
+    padding:0px;
+    height: 160px;
+    box-shadow: 5px 5px 5px  green;
+    
 }
+
+h3{
+    color: rgb(216, 67, 22);
+}
+del{
+    color: red;
+}
+p{
+    color: black;
+    font-weight: 500;
+}
+
 
 .flex{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
