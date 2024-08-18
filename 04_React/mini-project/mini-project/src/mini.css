@@ -1,0 +1,20 @@
+.searchbox,h1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 2rem;
+  
+}
+h2{
+    text-align:start;
+}
+.infoBox{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.Error{
+    display:flex;
+    flex-direction: column;
+}

@@ -1,0 +1,33 @@
+.heading{
+    text-align: center;
+    background: aqua;
+    color: rgba(0, 0, 0, 0.901);
+    border-radius: 2rem;    
+}
+.ticket{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 400;
+   font-size: larger;
+   gap: 40px;   
+
+}
+.ticket span{
+    border: 0.5px solid red;
+    height: 35px;
+    width: 50px;
+    text-align: center;
+    box-shadow: 1px 2px 4px red ;    
+    border-radius: 10px;
+
+}
+h3{
+    text-align: center;
+    color: green;
+    text-decoration:underline    
+}
+button{
+    margin-left: 43%;
+    margin-top: 30px;
+}
