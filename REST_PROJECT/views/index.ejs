@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="Qoura">Quora Post</h1>
+    <button class="newPost">
+        <a href="http://localhost:3000/posts/new">New Post</a>
+    </button>
+    <% for(post of posts){ %>
+        <div class="card">
+            <main class="l-card">
+                <section class="l-card__text">
+                    <p>
+                        <%= post.content %>
+                    </p>
+                </section>
+                <section class="l-card__user">
+                    <div class="l-card__userImage">
+                        <img src="https://avatars.githubusercontent.com/u/20525486?v=4" alt="Naruto">
+                    </div>
+                    <div class="l-card__userInfo">
+                        <span><%= post.Name %></span>
+                        <span>@<%= post.username %></span>
+                    </div>
+                </section>
+            </main>
+        </div>
+    <% } %>    
+</body>
+</html>
+
