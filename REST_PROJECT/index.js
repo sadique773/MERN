@@ -56,6 +56,10 @@ app.get("/posts/:id", (req, res) => {
   res.render("show",{post})
 }) 
 
+app.patch("/posts/:id/edit", (req, res) => {
+  res.send("path working")
+}) 
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

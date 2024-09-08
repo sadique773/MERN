@@ -140,8 +140,11 @@ img {
                 </div>
             </section>
         </main>
-        <button class="newPost">
-            <a href="http://localhost:3000/posts">Delete</a>
+        <button class="newPost" style="background-color: red;">
+            <a href="http://localhost:3000/posts/new">Delete</a>
+        </button>
+        <button class="newPost" style="background-color: rgb(0, 106, 255);">
+            <a href="http://localhost:3000/posts/<%= post.id %>/Edit">Edit</a>
         </button>
     </div>
 </body>
